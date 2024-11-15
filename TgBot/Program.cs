@@ -55,7 +55,7 @@ class Program
                                 case "/start":
                                 {
                                     var replyKeybord = CreateReplyMarkup(); 
-                                    using Stream stream = System.IO.File.OpenRead("../../../photos/startPhoto.jpg");
+                                    using Stream stream = System.IO.File.OpenRead("./photos/startPhoto.jpg");
                                     await client.SendPhotoAsync(
                                         chat.Id,
                                         photo: InputFile.FromStream(stream, "startPhoto.jpg")
@@ -69,7 +69,7 @@ class Program
                                 case "1 этап «Карта-путеводитель»":
                                 {
                                     var replyKeybord = CreateReplyMarkup(); 
-                                    using Stream stream = System.IO.File.OpenRead("../../../photos/firstPhoto.jpg");
+                                    using Stream stream = System.IO.File.OpenRead("./photos/firstPhoto.jpg");
                                     await client.SendPhotoAsync(
                                         chat.Id,
                                         photo: InputFile.FromStream(stream, "firstPhoto.jpg")
@@ -209,7 +209,7 @@ class Program
                                 case "СУВЕНИРНАЯ ПРОДУКЦИЯ\ud83e\ude86\ud83c\udf0a":
                                 {
                                     var replyKeybord = CreateReplyMarkup(); 
-                                    using Stream logo = System.IO.File.OpenRead("../../../photos/productLogo.jpg");
+                                    using Stream logo = System.IO.File.OpenRead("./photos/productLogo.jpg");
                                     await client.SendPhotoAsync(
                                         chat.Id,
                                         photo: InputFile.FromStream(logo, "productLogo.jpg")
@@ -218,7 +218,7 @@ class Program
                                         chat.Id,
                                         "Дорогие туристы! \ud83c\udfd5\ud83d\uddfa \nМы надеемся вам понравилось наше виртуальное путешествие! А теперь предлагаем вам приобрести сувенирную продукцию с нашим логотипом:\n\nP.S. По вопросам приобретения нашей сувенирной продукции просьба обращаться по контактному телефону 89025437770 \ud83d\udcf1\ud83d\udc40 (Менеджер - Валерия)",
                                         replyMarkup: replyKeybord);
-                                    using Stream shopper = System.IO.File.OpenRead("../../../photos/shopper.jpg");
+                                    using Stream shopper = System.IO.File.OpenRead("./photos/shopper.jpg");
                                     await client.SendPhotoAsync(
                                         chat.Id,
                                         photo: InputFile.FromStream(shopper, "shopper.jpg")
@@ -226,7 +226,7 @@ class Program
                                     await client.SendTextMessageAsync(
                                         chat.Id,
                                         "Шопер (эко-сумка)\n750 руб");
-                                    using Stream mayka = System.IO.File.OpenRead("../../../photos/mayka.jpg");
+                                    using Stream mayka = System.IO.File.OpenRead("./photos/mayka.jpg");
                                     await client.SendPhotoAsync(
                                         chat.Id,
                                         photo: InputFile.FromStream(mayka, "mayka.jpg")
@@ -234,7 +234,7 @@ class Program
                                     await client.SendTextMessageAsync(
                                         chat.Id,
                                         "Белая футболка с логотипом \n890 руб");
-                                    using Stream znacok = System.IO.File.OpenRead("../../../photos/znacok.jpg");
+                                    using Stream znacok = System.IO.File.OpenRead("./photos/znacok.jpg");
                                     await client.SendPhotoAsync(
                                         chat.Id,
                                         photo: InputFile.FromStream(znacok, "znacok.jpg")
@@ -242,7 +242,7 @@ class Program
                                     await client.SendTextMessageAsync(
                                         chat.Id,
                                         "Значок \n50 руб");
-                                    using Stream switshot = System.IO.File.OpenRead("../../../photos/svitshot.jpg");
+                                    using Stream switshot = System.IO.File.OpenRead("./photos/svitshot.jpg");
                                     await client.SendPhotoAsync(
                                         chat.Id,
                                         photo: InputFile.FromStream(switshot, "svitshot.jpg")
@@ -250,7 +250,7 @@ class Program
                                     await client.SendTextMessageAsync(
                                         chat.Id,
                                         "Свитшот \n1250 руб");
-                                    using Stream pazl = System.IO.File.OpenRead("../../../photos/pazl.jpg");
+                                    using Stream pazl = System.IO.File.OpenRead("./photos/pazl.jpg");
                                     await client.SendPhotoAsync(
                                         chat.Id,
                                         photo: InputFile.FromStream(pazl, "pazl.jpg")
@@ -258,7 +258,7 @@ class Program
                                     await client.SendTextMessageAsync(
                                         chat.Id,
                                         "Пазл с логотипом \n350 руб");
-                                    using Stream kovrik = System.IO.File.OpenRead("../../../photos/kovrik.jpg");
+                                    using Stream kovrik = System.IO.File.OpenRead("./photos/kovrik.jpg");
                                     await client.SendPhotoAsync(
                                         chat.Id,
                                         photo: InputFile.FromStream(kovrik, "kovrik.jpg")
@@ -266,7 +266,7 @@ class Program
                                     await client.SendTextMessageAsync(
                                         chat.Id,
                                         "Коврик для мышки \n250 руб");
-                                    using Stream bottle = System.IO.File.OpenRead("../../../photos/bottle.jpg");
+                                    using Stream bottle = System.IO.File.OpenRead("./photos/bottle.jpg");
                                     await client.SendPhotoAsync(
                                         chat.Id,
                                         photo: InputFile.FromStream(bottle, "bottle.jpg")
@@ -274,7 +274,7 @@ class Program
                                     await client.SendTextMessageAsync(
                                         chat.Id,
                                         "Бутылка для питья \n550 руб");
-                                    using Stream tofallLogo = System.IO.File.OpenRead("../../../photos/tofallLogo.jpg");
+                                    using Stream tofallLogo = System.IO.File.OpenRead("./photos/tofallLogo.jpg");
                                     await client.SendPhotoAsync(
                                         chat.Id,
                                         photo: InputFile.FromStream(tofallLogo, "tofallLogo.jpg")
@@ -282,7 +282,7 @@ class Program
                                     await client.SendTextMessageAsync(
                                         chat.Id,
                                         "А также продукция от еще одного нашего чат-бота: «Загадочный мир Тофаларии» \ud83d\udcab");
-                                    using Stream tofallbottle = System.IO.File.OpenRead("../../../photos/tofallbottle.jpg");
+                                    using Stream tofallbottle = System.IO.File.OpenRead("./photos/tofallbottle.jpg");
                                     await client.SendPhotoAsync(
                                         chat.Id,
                                         photo: InputFile.FromStream(tofallbottle, "tofallbottle.jpg")
@@ -290,7 +290,7 @@ class Program
                                     await client.SendTextMessageAsync(
                                         chat.Id,
                                         "Бутылка для питья \n550 руб");
-                                    using Stream padyshka = System.IO.File.OpenRead("../../../photos/padyshka.jpg");
+                                    using Stream padyshka = System.IO.File.OpenRead("./photos/padyshka.jpg");
                                     await client.SendPhotoAsync(
                                         chat.Id,
                                         photo: InputFile.FromStream(padyshka, "padyshka.jpg")
@@ -298,7 +298,7 @@ class Program
                                     await client.SendTextMessageAsync(
                                         chat.Id,
                                         "Чехол для подушки 35х35\n250 руб");
-                                    using Stream tofallznac = System.IO.File.OpenRead("../../../photos/tofallznac.jpg");
+                                    using Stream tofallznac = System.IO.File.OpenRead("./photos/tofallznac.jpg");
                                     await client.SendPhotoAsync(
                                         chat.Id,
                                         photo: InputFile.FromStream(tofallznac, "tofallznac.jpg")
@@ -306,7 +306,7 @@ class Program
                                     await client.SendTextMessageAsync(
                                         chat.Id,
                                         "Значок \n50 руб");
-                                    using Stream hudi = System.IO.File.OpenRead("../../../photos/hudi.jpg");
+                                    using Stream hudi = System.IO.File.OpenRead("./photos/hudi.jpg");
                                     await client.SendPhotoAsync(
                                         chat.Id,
                                         photo: InputFile.FromStream(hudi, "hudi.jpg")
@@ -314,7 +314,7 @@ class Program
                                     await client.SendTextMessageAsync(
                                         chat.Id,
                                         "Кофта-худи\n1500 руб");
-                                    using Stream polo = System.IO.File.OpenRead("../../../photos/polo.jpg");
+                                    using Stream polo = System.IO.File.OpenRead("./photos/polo.jpg");
                                     await client.SendPhotoAsync(
                                         chat.Id,
                                         photo: InputFile.FromStream(polo, "polo.jpg")
@@ -322,7 +322,7 @@ class Program
                                     await client.SendTextMessageAsync(
                                         chat.Id,
                                         "Рубашка-поло\n1290 руб");
-                                    using Stream tofallpazl = System.IO.File.OpenRead("../../../photos/tofallpazl.jpg");
+                                    using Stream tofallpazl = System.IO.File.OpenRead("./photos/tofallpazl.jpg");
                                     await client.SendPhotoAsync(
                                         chat.Id,
                                         photo: InputFile.FromStream(tofallpazl, "tofallpazl.jpg")
